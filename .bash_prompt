@@ -1,0 +1,36 @@
+# enable git unstaged indicators - set to a non-empty value
+GIT_PS1_SHOWDIRTYSTATE="."
+ 
+# enable showing of untracked files - set to a non-empty value
+GIT_PS1_SHOWUNTRACKEDFILES="."
+ 
+# enable stash checking - set to a non-empty value
+GIT_PS1_SHOWSTASHSTATE="."
+ 
+# enable showing of HEAD vs its upstream
+GIT_PS1_SHOWUPSTREAM="auto"
+ 
+BLACK=$(tput setaf 0)
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+LIME_YELLOW=$(tput setaf 190)
+POWDER_BLUE=$(tput setaf 153)
+BLUE=$(tput setaf 4)
+MAGENTA=$(tput setaf 5)
+CYAN=$(tput setaf 6)
+WHITE=$(tput setaf 7)
+BRIGHT=$(tput bold)
+NORMAL=$(tput sgr0)
+BLINK=$(tput blink)
+REVERSE=$(tput smso)
+UNDERLINE=$(tput smul)
+
+# GIT prompt
+if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
+    GIT_PROMPT_THEME=Default
+    source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+fi
+
+# GIT bash completion
+source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash

@@ -1,0 +1,8 @@
+function set_prefix {
+    BRANCH=`__git_ps1`
+    if [[ -z $BRANCH ]]; then
+        echo "${NORMAL}☃ π"
+    else
+        echo "${UNDERLINE}+"
+    fi
+}
