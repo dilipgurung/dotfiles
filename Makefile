@@ -1,6 +1,6 @@
-.PHONY: all dotfiles
+.PHONY: all dotfiles activate
 
-all: dotfiles
+all: dotfiles activate
 
 dotfiles:
 	# add aliases for dotfiles
@@ -8,3 +8,6 @@ dotfiles:
 		f=$$(basename $$file); \
 		ln -sfn $$file $(HOME)/$$f; \
 	done; \
+
+activate:
+	/bin/sh -c "source $(HOME)/.bash_profile"

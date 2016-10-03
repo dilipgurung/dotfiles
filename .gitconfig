@@ -1,25 +1,27 @@
 [core]
-    excludesfile = /Users/dilipgurung/.gitignore_global
-    editor = /usr/bin/vim
-    quotepath = false
+        excludesfile = /Users/dilipgurung/.gitignore_global
+        editor = /usr/bin/vim
+        quotepath = false
 [difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path =
+        cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+        path =
 [mergetool "sourcetree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    trustExitCode = true
+        cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+        trustExitCode = true
 [user]
-    email = gurungdilip@gmail.com
-    name = Dilip Gurung
+	email = gurungdilip@gmail.com
+	name = Dilip Gurung
 [pull]
-    rebase = true
+        rebase = true
 [alias]
-    co = checkout
-    ds = diff --staged
-    st = status -sb
-    amend = commit --amend -C HEAD
-    undo = reset --soft HEAD^
-    ls = log --pretty=format:\"%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]\" --decorate --date=short
-    standup = log --since '1 day ago' --oneline --author gurungdilip@gmail.com
-    graph = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
-    delete = branch -D
+        amend = commit --amend -C HEAD
+        co = checkout
+        delete = branch -D
+        ds = diff --staged
+        graph = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+        ls = log --pretty=format:\"%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]\" --decorate --date=short
+        st = status -sb
+        standup = log --since '1 day ago' --oneline --author gurungdilip@gmail.com
+        undo = reset --soft HEAD^
+[github]
+	user = dilipgurung
