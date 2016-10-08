@@ -1,10 +1,3 @@
-call plug#begin('~/.vim/plugged')
-
-Plug 'fatih/vim-go'
-Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
-
-call plug#end()
-
 filetype plugin indent on
 syntax on
 
