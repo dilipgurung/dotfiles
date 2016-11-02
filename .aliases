@@ -36,5 +36,6 @@ alias sublime="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 # Start kubernetes UI
 alias kube="kubectl proxy --port=8181"
 
-# list all linux style
-alias 'll=ls -ali'
+# list linux style
+alias 'ls=ls -GF'
+alias 'll=ls -aliGF'
