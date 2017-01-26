@@ -11,7 +11,4 @@ if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
     source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
 fi
 
-# GIT bash completion
-source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
-
 PS1='${MAGENTA}\u${WHITE} in ${GREEN}\w${WHITE}${MAGENTA}`__git_ps1 " on %s"`${WHITE}\r\n\[`set_prefix`\]${NORMAL}${WHITE} '
