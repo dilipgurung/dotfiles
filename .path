@@ -3,10 +3,13 @@ export GOPATH=$HOME/Go
 export GOROOT=/usr/local/opt/go/libexec
 
 # Composer
-export COMPOSER_PATH=~/.composer/vendor/bin
+COMPOSER_PATH=~/.composer/vendor/bin
 
 # Packer
-export PACKER=/usr/local/packer
+PACKER=/usr/local/packer
+
+# Terraform
+TERRAFORM=/usr/local/terraform/bin
 
 # Update PATH
-export PATH=/user/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin:$GOROOT/bin:$PACKER:$COMPOSER_PATH
+export PATH=/user/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin:$GOROOT/bin:$PACKER:$COMPOSER_PATH:$TERRAFORM
