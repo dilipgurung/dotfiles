@@ -31,7 +31,7 @@ alias vp="vagrant provision"
 alias vs="vagrant status"
 
 # Sublime Text Editor
-alias sublime="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # Start kubernetes UI
 alias kube="kubectl proxy --port=8181"
