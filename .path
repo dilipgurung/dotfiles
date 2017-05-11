@@ -12,4 +12,4 @@ PACKER=/usr/local/packer
 TERRAFORM=/usr/local/terraform/bin
 
 # Update PATH
-export PATH=/user/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin:$GOROOT/bin:$PACKER:$COMPOSER_PATH:$TERRAFORM
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin:$GOROOT/bin:$PACKER:$COMPOSER_PATH:$TERRAFORM
