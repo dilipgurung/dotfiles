@@ -1,8 +1,6 @@
 # dotfiles
 My Dotfiles
 
-This repo was inspired by [Jess Frazelle's dotfiles](https://github.com/jessfraz/dotfiles)
-
 ##### To install, run
 
 	make
