@@ -1,5 +1,6 @@
 # Laravel
-alias a='php artisan'
+alias serve='artisan serve'
+alias tinker='artisan tinker'
 
 # PHPUnit
 alias t='clear && ./vendor/bin/phpunit'

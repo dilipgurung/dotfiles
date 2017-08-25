@@ -10,4 +10,4 @@ dotfiles:
 	done; \
 
 activate:
-	/bin/sh -c "source $(HOME)/.bash_profile"
+	/bin/bash -c "source $(HOME)/.bash_profile"
