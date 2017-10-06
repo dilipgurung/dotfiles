@@ -10,3 +10,6 @@ TERRAFORM=/usr/local/terraform/bin
 
 # Update PATH
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin:$GOROOT/bin:$COMPOSER_PATH:$TERRAFORM
+
+# Java
+export JAVA_HOME=$(/usr/libexec/java_home)
