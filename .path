@@ -8,8 +8,13 @@ COMPOSER_PATH=~/.composer/vendor/bin
 # Terraform
 TERRAFORM=/usr/local/terraform/bin
 
+# Python3
+PYTHON3=/Library/Frameworks/Python.framework/Versions/3.6/bin
+
 # Update PATH
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin:$GOROOT/bin:$COMPOSER_PATH:$TERRAFORM
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin:$GOROOT/bin:$COMPOSER_PATH:$TERRAFORM:$PYTHON3
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+

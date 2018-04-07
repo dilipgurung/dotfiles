@@ -27,10 +27,12 @@ REVERSE=$(tput smso)
 UNDERLINE=$(tput smul)
 
 # GIT prompt
-if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
+if [ -f /usr/local/opt/bash-git-prompt/share/gitprompt.sh ]; then
     GIT_PROMPT_THEME=Default
-    source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+    source /usr/local/opt/bash-git-prompt/share/gitprompt.sh
 fi
 
 # GIT bash completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+PS1='${MAGENTA}\u${WHITE} in ${GREEN}\w${WHITE}${MAGENTA}`__git_ps1 " on %s"`${WHITE}\r\n\[`set_prefix`\]${NORMAL}${WHITE} '
