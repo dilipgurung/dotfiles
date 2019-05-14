@@ -21,9 +21,9 @@ alias tinker='artisan tinker'
 
 # Misc PHP
 t() {
-    if [ -f vendor/bin/phpunit ]; then
-        vendor/bin/phpunit "$@"
+    if [ "$1" ]; then
+        vendor/bin/phpunit --filter=$1
     else
-        phpunit "$@"
+        vendor/bin/phpunit "$@"
     fi
 }

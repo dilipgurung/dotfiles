@@ -3,7 +3,7 @@ alias serve='artisan serve'
 alias tinker='artisan tinker'
 
 # PHPUnit
-alias t='clear && ./vendor/bin/phpunit'
+# alias t='clear && ./vendor/bin/phpunit'
 
 # Elastic Search
 alias es='elasticsearch --config=/usr/local/opt/elasticsearch17/config/elasticsearch.yml'
