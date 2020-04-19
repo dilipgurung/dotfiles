@@ -7,6 +7,7 @@ tap 'homebrew/bundle'
 
 # Binaries
 brew 'awscli'
+brew 'awsebcli'
 brew 'bash' # Latest Bash version
 brew 'bat' # "cat" on steroids
 brew 'git'
