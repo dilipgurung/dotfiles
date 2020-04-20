@@ -47,6 +47,7 @@ cask 'tor-browser'
 cask 'vagrant'
 cask 'vlc'
 cask 'whatsapp'
+cask 'macdown'
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'
