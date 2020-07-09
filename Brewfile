@@ -8,15 +8,15 @@ tap 'homebrew/bundle'
 # Binaries
 brew 'awscli'
 brew 'awsebcli'
-brew 'bash' # Latest Bash version
+brew 'bash'
 brew 'bat' # "cat" on steroids
 brew 'git'
 brew 'gnupg'
 brew 'grep'
 brew 'httpie'
 brew 'mackup'
-brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
-brew 'tree' # List directories in a tree structure
+brew 'pkg-config'
+brew 'tree'
 
 
 # Development
@@ -28,6 +28,7 @@ brew 'node'
 brew 'yarn'
 
 # Apps
+cask 'rectangle'
 cask 'iterm2'
 cask 'caffeine'
 cask 'firefox'
