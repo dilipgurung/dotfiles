@@ -53,3 +53,4 @@ cask 'macdown'
 # Fonts
 cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
+cask 'font-fantasque-sans-mono'
