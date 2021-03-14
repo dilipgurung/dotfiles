@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Path to your dotfiles.
 export DOTFILES=$HOME/.dotfiles
 
@@ -116,3 +123,6 @@ for file in ~/.{path,aliases,functions,extra,exports}; do
 	[[ -r "$file" ]] && [[ -f "$file" ]] && source "$file"
 done
 unset file
+
+# To customize prompt, run `p10k configure` or edit ~/Documents/App_Settings/Mackup/.p10k.zsh.
+[[ ! -f ~/Documents/App_Settings/Mackup/.p10k.zsh ]] || source ~/Documents/App_Settings/Mackup/.p10k.zsh
