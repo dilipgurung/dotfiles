@@ -1,6 +1,9 @@
+# Homebrew
+export PATH="/opt/homebrew/bin:$PATH"
+
 # Golang
 export GOPATH=$HOME/Go
-export GOROOT=/usr/local/opt/go/libexec
+export GOROOT=$(brew --prefix golang)/libexec
 
 # Composer
 COMPOSER_PATH=~/.composer/vendor/bin
@@ -15,4 +18,7 @@ PYTHON3=~/Library/Python/3.7/bin
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin:$GOROOT/bin:$COMPOSER_PATH:$TERRAFORM:$PYTHON3
 
 # Java
-export JAVA_HOME=$(/usr/libexec/java_home)
+#export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+PATH="/opt/homebrew/opt/ruby/bin:$PATH"
